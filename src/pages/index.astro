@@ -1,0 +1,55 @@
+---
+import 'pretendard/dist/web/variable/pretendardvariable-dynamic-subset.css';
+---
+
+<html lang="ko">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" href="/favicon.ico" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="generator" content={Astro.generator} />
+		<title>준비 중입니다</title>
+	</head>
+	<body>
+		<main>
+			<h1>준비 중입니다</h1>
+		</main>
+	</body>
+</html>
+
+<style is:global>
+	html,
+	body {
+		margin: 0;
+		height: 100%;
+	}
+
+	body {
+		font-family:
+			'Pretendard Variable',
+			Pretendard,
+			-apple-system,
+			BlinkMacSystemFont,
+			system-ui,
+			'Apple SD Gothic Neo',
+			'Noto Sans KR',
+			sans-serif;
+		-webkit-font-smoothing: antialiased;
+		background: #fff;
+		color: #111;
+	}
+
+	main {
+		display: grid;
+		place-items: center;
+		min-height: 100dvh;
+	}
+
+	h1 {
+		margin: 0;
+		font-size: clamp(1.5rem, 4vw, 2.5rem);
+		font-weight: 600;
+		letter-spacing: -0.02em;
+	}
+</style>
